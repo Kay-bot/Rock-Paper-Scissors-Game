@@ -78,12 +78,12 @@ function game(userChoice) {
     case "rp":
     case "ps":
     case "sr":
-      lose();
+      lose(userChoice, computerChoice);
       break;
     case "rr":
     case "pp":
     case "ss":
-      draw();
+      draw(userChoice, computerChoice);
       break;
   }
 }
